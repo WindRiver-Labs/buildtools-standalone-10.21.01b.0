@@ -1,0 +1,118 @@
+Build Configuration:
+WRLINUX_VERSION      = "10.21.01b.0"
+WRLINUX_BRANCH       = "development"
+BB_VERSION           = "1.49.0"
+BUILD_SYS            = "x86_64-linux"
+ORIGNATIVELSBSTRING  = "ubuntu-18.04"
+DISTRO               = "wrlinux"
+DISTRO_VERSION       = "10.21.01b.0"
+MACHINE              = "qemux86-64"
+DEFAULTTUNE          = "core2-64"
+TARGET_SYS           = "x86_64-wrs-linux"
+TUNE_FEATURES        = "m64 core2"
+TARGET_FPU           = ""
+lib32:  TARGET_SYS        = "x86_64-wrsmllib32-linux"
+lib32:  TUNE_FEATURES     = "m32 core2"
+wrlinux              
+wrlinux-distro       = "master-wr:786e03aa504d37d2e9f1839dc234d641e5e2aff3"
+meta                 = "yocto-3.2-714-gdef0188934:def0188934270694dc18e6d1b0cbbf033209b1e4"
+meta-initramfs       
+meta-xfce            
+meta-oe              
+meta-filesystems     
+meta-webserver       
+meta-networking      
+meta-python          
+meta-perl            
+meta-gnome           
+meta-multimedia      = "wr-10.20-20210104:5af104eb32125c6caf04d52082bd9bd1af2f03fd"
+meta-security        = "wr-10.20-20201228:c553edc89474fe23ec3c7d5845c4655640dc1e23"
+meta-selinux         = "wr-10.20-20201216:50b15e0f77236854d142e2df5a406bb86f97a3ff"
+intel-x86            = "master-wr:ec63ab88d1646c203799ca086151d24e675ad14a"
+meta-virtualization  = "wr-10.20-20210104:5d81588efc8201c1578bdd59e9961aea029ef48f"
+meta-realtime        = "wr-10.20-20200325:ec214cae4df08c7f267c68281838548477329d42"
+meta-mingw           = "wr-10.20-20201118:69498015d1794d10584d0ad18735a1561ee08efa"
+wr-template          = "master-wr:1431b566a31b80da8313008aaedfc6abf272e92c"
+meta-yocto-bsp       
+meta-poky            = "wr-10.20-20201228:f866bc759ba42d53ab56fc0815a6bab3c0d6ea18"
+xilinx-zynqmp        = "master-wr:35bda976a102437bbc2eed55fe497a474fa74d45"
+xilinx-zynq          = "master-wr:50eaaa6b5f93dc20cd4efdd439d079bb72740091"
+meta-gplv2           = "wr-10.20-20201019:1b732771fe04d4d30645c5ed73cd9800abc57454"
+meta-efi-secure-boot 
+meta-encrypted-storage 
+meta-integrity       
+meta-signing-key     = "wr-10.20-20201214:4035d9e88813dee87c35b18cf7c5befaa9d44df3"
+meta-cloud-services  = "wr-10.20-20201223:6b2dd6ecce04eb52a1cf6e8d815f4f5dcd260e9f"
+bcm-2xxx-rpi         = "master-wr:7eaa421c8a8412c2619b36fb8cba091c0bd6dafe"
+meta                 
+meta-ids             
+meta-tpm             
+meta-tpm2            = "wr-10.20-20201214:4035d9e88813dee87c35b18cf7c5befaa9d44df3"
+meta-openstack       
+meta-openstack-aio-deploy 
+meta-openstack-compute-deploy 
+meta-openstack-compute-test-config 
+meta-openstack-controller-deploy 
+meta-openstack-controller-test-config 
+meta-openstack-qemu  
+meta-openstack-swift-deploy = "wr-10.20-20201223:6b2dd6ecce04eb52a1cf6e8d815f4f5dcd260e9f"
+meta-intel           = "wr-10.20-20210104:a0f0b6c94da71490959d266520b5b5f683a2b942"
+wrlinux-ovp          = "master-wr:786e03aa504d37d2e9f1839dc234d641e5e2aff3"
+meta-cgl-common      = "wr-10.20-20201116:e4ce51e7bdd6e35b27b214105b2aaf1aa9841437"
+wrlinux-cgl          = "master-wr:786e03aa504d37d2e9f1839dc234d641e5e2aff3"
+meta-dpdk            = "wr-10.20-20201209:37a5a148a504c7d2daeb0d2d2ca31a5d99c7cec4"
+meta-intel-qat       = "wr-10.20-20201209:ef8b7f4cb98228e8f019b89ec32aeece40866eb7"
+meta-anaconda        = "wr-10.20-20201207:bbed66074487ae96e7c5ff54b333672290e15c76"
+nxp-imx8             = "master-wr:3edfc81e0e64be5bc907840e3816bd1f3e1a85a3"
+wr-ostree            = "master-wr:a76491ee48a08aa6074f9eb1cb27033634c131ec"
+marvell-cn9xxx       = "master-wr:5d0eb1f428da0d33441127d9a3d9c2a17220a6b4"
+meta-openssl102      = "wr-10.20-20200610:5d4da82f07ad47f05639f81b8a9cf83dffefb4ea"
+meta-openssl102-fips = "wr-10.20-20200610:69bb1ca88b2fb291f7c4491c5f909818094a0faf"
+meta-security-compliance = "wr-10.20-20201228:c553edc89474fe23ec3c7d5845c4655640dc1e23"
+meta-python2         = "wr-10.20-20201021:0def70f3186b97913f762fef3cd8197158bb3388"
+nxp-s32g2xx          = "master-wr:b4782c0fe2465b154884a625dc0d0ae7b90ac156"
+meta-tensorflow      = "wr-10.20-20210104:a766f8980172fdb091544b2e8758a2d2e0756080"
+meta-clang           = "wr-10.20-20201228:4b1f72dbd44823eb45154b1fdfb94c76c40ed83f"
+meta-qt5             = "wr-10.20-20201123:55743a924826d393d2ec596ace8098dd795de41a"
+meta-xilinx-tools    = "wr-10.20-20201228:1b8c49be520f2e7dc3f4bfca6fc48447125ad4e6"
+meta-xilinx-bsp      = "wr-10.20-20201228:a8c97cfd247c3b52f44fb65fd73c956665764b05"
+meta-browser         = "wr-10.20-20201221:ee51de152d66ed0713237e01cd75495d9a30988a"
+ti-j72xx             = "master-wr:991d27577fbe0a076dd3cdafa6fdd4f9d77aeef1"
+meta-selinux-dl      = "master-wr:3a795e8277c251272b0f95c02849ab3669a5cbe2"
+meta-mingw-dl        = "master-wr:acbef7a53c994823fb3c49d7904c297ea5759d68"
+meta-security-dl     = "master-wr:e28e58d14abdf1e4f00dd96a338007d24a26d101"
+meta-efi-secure-boot-dl = "master-wr:d014295e7829f4cf3321fbf880be0e133672c35e"
+meta-encrypted-storage-dl = "master-wr:68bd9f2246d82a4f323c808f071db56ddc709668"
+meta-integrity-dl    = "master-wr:d26bca1ebf9a0705f648bea1524d6ded6ca2d609"
+meta-ids-dl          = "master-wr:7fc3bf499a9ccd933616236d66b7b7450d9c5fcf"
+meta-tpm2-dl         = "master-wr:ff04afab8ab751abe18ac55a0a2e410cf40fe22a"
+wrlinux-dl           = "master-wr:73232abde9b47f74b4eb4f0768393f6793eb0903"
+meta-tpm-dl          = "master-wr:9356d3edf3c7d4afaa1b03d1d3812f103f2038cd"
+wrlinux-ovp-dl       = "master-wr:7fc13d2ee8676834052b93abbe6c56870cd0d551"
+meta-cgl-common-dl   = "master-wr:7a2d9f1b04c706ef0549633b945c50a1486d40f5"
+wrlinux-cgl-dl       = "master-wr:43de8911d11e3af68d81b2d7cb885629bfd06641"
+meta-intel-dl        = "master-wr:b7e79c83d50e1eb166fa5720887a72fb533228de"
+meta-dpdk-dl         = "master-wr:cff1a89d49b580428831c9c816e27a94d9f1d76c"
+meta-intel-qat-dl    = "master-wr:d0cb4f6e79f38c2e0499b3e2b99dc52ec66dbf30"
+meta-anaconda-dl     = "master-wr:31903a97c677cdda86dd0b489c21d6f46ecd600b"
+meta-signing-key-dl  = "master-wr:175ade4203b1320535986ff380fe85b71c1efb24"
+xilinx-zynqmp-dl     = "master-wr:68e596c2751b870300417c4767c20106ef546fd6"
+wr-ostree-dl         = "master-wr:13227963f3ac9ea18d9b0822f448bb79d2593e85"
+meta-security-compliance-dl = "master-wr:1984592e4474b4af5a0bbcfa9338b061b2abbc52"
+meta-openssl102-dl   = "master-wr:6c8aac0dac0b2e3674aa8e677cf8cced2d4c596b"
+meta-openssl102-fips-dl = "master-wr:639fa9ff56288b1e437b87bf84087732927e0911"
+bcm-2xxx-rpi-dl      = "master-wr:5e39ea6acaa36c132bab5edcf58df3e7eac85e6e"
+nxp-s32g2xx-dl       = "master-wr:4f4758357f13a2b33a5375876d4eb3a9ab93f32e"
+meta-clang-dl        = "master-wr:96096992e2b841ba151fa04953c1e4c0d7e86169"
+meta-qt5-dl          = "master-wr:06adc5f196a52157e38339e619015f751ec62134"
+meta-xilinx-dl       = "master-wr:a28e9eee7274cc8b2674e499e0ec4bbe28b954e5"
+meta-browser-dl      = "master-wr:f1d0486e8e01424efad820e94a5a4853ad002cd8"
+meta-cloud-services-dl-3.2 = "master-wr:6d4e2165eea40491d9a856453a44a0fbcb267bd8"
+meta-gplv2-dl-3.2    = "master-wr:b41160d9d1d589bed8f04e8e69ac7f5094a628fd"
+meta-openembedded-dl-3.2 = "master-wr:f3b1c15faff13c7061b0dec8df3c023080429c29"
+meta-python2-dl-3.2  = "master-wr:5e26ae3ebf834b23b1e28958b796b53882b65810"
+meta-realtime-dl-3.2 = "master-wr:be750931bc38ea814539894d99acb3b8ac4b8c84"
+meta-tensorflow-dl-3.2 = "master-wr:bc0ba4ef4e0d49bb17506985a17f3b26c8e51389"
+meta-virtualization-dl-3.2 = "master-wr:1d848b5041ee726ea675d1cfc23e813871474098"
+oe-core-dl-3.2       = "master-wr:b7b43cc3578e9d8f31a0179531d6c17ad7906807"
+local                = "master:8525112cccc3d1c8fd58d330846337b4a129a512"
